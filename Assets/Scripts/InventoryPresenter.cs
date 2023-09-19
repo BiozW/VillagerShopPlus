@@ -11,10 +11,10 @@ namespace Minecraft.InventorySystem
 
         int maxShownItemCount;
         int maxCategoryCount = 3;
-        int pageSize = 7;
 
         [SerializeField] UIInventory ui;
         [SerializeField] Inventory inventory;
+        [SerializeField] int pageSize;
         
         //This list tells the UI what name and icon to set for each category.
         [SerializeField] List<CategoryInfo> categoryInfoList = new List<CategoryInfo>();
