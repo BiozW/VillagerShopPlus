@@ -12,13 +12,13 @@ namespace Minecraft.InventorySystem
         int maxShownItemCount;
         int maxCategoryCount = 3;
 
-        [SerializeField] NewUIInventory ui;
+        [SerializeField] UIInventory ui;
         [SerializeField] Inventory inventory;
         [SerializeField] int pageSize;
         
         //This list tells the UI what name and icon to set for each category.
         [SerializeField] List<CategoryInfo> categoryInfoList = new List<CategoryInfo>();
-        public NewPurchaseManager purchaseManager;
+        public PurchaseManager purchaseManager;
 
         void Start()
         {
@@ -127,7 +127,7 @@ namespace Minecraft.InventorySystem
             var currentItem = itemsToDisplay[currentItemIndex];
 
             //This will hold list of UIItem_Data for the display of UIItem
-            var uiDataList = new List<NewUIItem_Data>();
+            var uiDataList = new List<UIItem_Data>();
 
             //First find out what page we are in. 
             var currentPageIndex = currentItemIndex / pageSize;
@@ -142,7 +142,7 @@ namespace Minecraft.InventorySystem
                 //Select only item within start and end index and add to list.
                 if (i >= startIndexToDisplay && i <= endIndexToDisplay)
                 {
-                    var uiData = new NewUIItem_Data(item, currentItem == item);
+                    var uiData = new UIItem_Data(item, currentItem == item);
                     uiDataList.Add(uiData);
                 }
               

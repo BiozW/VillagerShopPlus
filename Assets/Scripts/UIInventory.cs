@@ -1,4 +1,4 @@
-/*using System;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -56,10 +56,10 @@ namespace Minecraft.InventorySystem
         }
     }
 
-    /*[Serializable]
+    [Serializable]
     public class CategoryInfo
     {
         public string name;
         public Sprite icon;
     }
-}*/
+}

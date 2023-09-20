@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,16 +33,6 @@ namespace Minecraft.InventorySystem
             }
         }
     }
-
-    public class OtherPurchaseManager : MonoBehaviour, IPurchasable
-    {
-        // Add properties and methods specific to this purchase manager
-
-        public void Purchase()
-        {
-            // Purchase logic for this manager
-        }
-    }
-}
+}*/
 
 

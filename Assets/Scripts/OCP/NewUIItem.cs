@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-using System;
+/*using System;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -60,5 +56,5 @@ namespace Minecraft.InventorySystem
             this.isSelected = isSelected;
         }
     }
-}
+}*/
 
