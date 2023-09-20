@@ -4,21 +4,45 @@ using UnityEngine;
 
 namespace Minecraft.InventorySystem
 {
-    public abstract class NewPurchaseManager : MonoBehaviour
+    public interface IPurchasable
     {
-        protected ICurrencyManager currencyManager;
-        public int cost = 0;
+        void Purchase();
+    }
+
+    public class NewEmeraldManager : MonoBehaviour
+    {
+        public int myemerald = 0;
+
+        public void EmeraldUpdate()
+        {
+            // Update emerald UI here
+        }
+    }
+
+    public class NewPurchaseManager : MonoBehaviour, IPurchasable
+    {
+        public NewEmeraldManager emeraldManager;
+        public int emeraldcost = 0;
 
         public void Purchase()
         {
-            if (currencyManager.GetCurrentCurrency() >= cost)
+            if (emeraldManager.myemerald >= emeraldcost)
             {
-                currencyManager.UpdateCurrency(-cost);
-                OnPurchase();
+                emeraldManager.myemerald -= this.emeraldcost;
+                emeraldManager.EmeraldUpdate();
             }
         }
+    }
 
-        protected abstract void OnPurchase();
+    public class OtherPurchaseManager : MonoBehaviour, IPurchasable
+    {
+        // Add properties and methods specific to this purchase manager
+
+        public void Purchase()
+        {
+            // Purchase logic for this manager
+        }
     }
 }
+
 
