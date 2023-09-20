@@ -19,7 +19,6 @@ namespace Minecraft.InventorySystem
             }
         }
 
-        //protected abstract void OnPurchase();
     }
 }
 

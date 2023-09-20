@@ -26,7 +26,6 @@ namespace Minecraft.InventorySystem
         // Update is called once per frame
         void Update()
         {
-            Debug.Log(GetCurrentCurrency());
             InfiniteEmerald();
             EmeraldUpdate();
         }
