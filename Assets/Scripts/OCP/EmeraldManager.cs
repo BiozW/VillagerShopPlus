@@ -21,18 +21,19 @@ namespace Minecraft.InventorySystem
         public void UpdateCurrency(int amount)
         {
             myemerald += amount;
-            InfiniteEmerald();
-            EmeraldUpdate();
         }
 
         // Update is called once per frame
         void Update()
         {
+            Debug.Log(GetCurrentCurrency());
+            InfiniteEmerald();
             EmeraldUpdate();
         }
 
         public void InfiniteEmerald()
         {
+            
             if (toggleInfinite == true)
             {
                 if (myemerald <= 3)
