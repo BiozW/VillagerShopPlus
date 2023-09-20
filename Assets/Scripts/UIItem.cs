@@ -17,7 +17,7 @@ namespace Minecraft.InventorySystem
         [SerializeField] Sprite itemImage;
         [SerializeField] Image pointerImage;
         public PurchaseManager purchase;
-        [SerializeField] TextMeshProUGUI descriptionShow;
+        public TextMeshProUGUI descriptionShow;
 
         public string description_text;
 
@@ -42,10 +42,12 @@ namespace Minecraft.InventorySystem
         public void OnPointerEnter(PointerEventData eventData)
         {
             descriptionShow.text = description_text;
+            pointerImage.gameObject.SetActive(true);
         }
         public void OnPointerExit(PointerEventData eventData)
         {
             descriptionShow.text = "";
+            pointerImage.gameObject.SetActive(false);
         }
 
     }
