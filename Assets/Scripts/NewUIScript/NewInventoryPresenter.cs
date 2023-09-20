@@ -85,7 +85,7 @@ namespace Minecraft.InventorySystem
 
 
 
-        void PrevCategory()
+        public void PrevCategory()
         {
             if (currentCategoryIndex <= 0)
                 return;
@@ -95,7 +95,7 @@ namespace Minecraft.InventorySystem
             RefreshUI();
         }
 
-        void NextCategory()
+        public void NextCategory()
         {
             if (currentCategoryIndex >= maxCategoryCount - 1)
                 return;
