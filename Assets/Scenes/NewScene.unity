@@ -2680,6 +2680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acaee9d15a4a8e0409f866b15a605d89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EManager: {fileID: 1286358924}
   cost: 0
 --- !u!1 &1660724355
 GameObject:
