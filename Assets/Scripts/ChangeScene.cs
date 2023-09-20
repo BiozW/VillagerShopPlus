@@ -7,11 +7,11 @@ public class ChangeScene : MonoBehaviour
 {
     public void changeSceneToNewScene()
     {
-        SceneManager.LoadScene("NewScene");
+        SceneManager.LoadScene("NewUIScene");
     }
 
     public void changeSceneToMainScene()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("OldUIScene");
     }
 }
