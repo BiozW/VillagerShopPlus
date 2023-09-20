@@ -8,17 +8,19 @@ namespace Minecraft.InventorySystem
 {
     public class PurchaseManager : MonoBehaviour
     {
-        public EmeraldManager emeraldManager;
-        public int emeraldcost = 0;
-        
+        protected EmeraldManager EManager;
+        public int cost = 0;
+
         public void Purchase()
         {
-            if (emeraldManager.myemerald >= emeraldcost)
+            if (EManager.GetCurrentCurrency() >= cost)
             {
-                emeraldManager.myemerald -= this.emeraldcost;
-                emeraldManager.EmeraldUpdate();
+                EManager.UpdateCurrency(-cost);
             }
         }
+
+        //protected abstract void OnPurchase();
     }
 }
+
 

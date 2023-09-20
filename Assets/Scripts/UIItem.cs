@@ -26,7 +26,7 @@ namespace Minecraft.InventorySystem
         {
             descriptionShow.text = data.itemData.description;
             description_text = data.itemData.description;
-            purchase.emeraldcost = data.itemData.cost;
+            purchase.cost = data.itemData.cost;
             costText.text = "" + data.itemData.cost;
             countText.text = "" +  data.itemData.count;
             if(data.itemData.count == 1)
@@ -62,4 +62,7 @@ namespace Minecraft.InventorySystem
             this.isSelected = isSelected;
         }
     }
+    
+    
+
 }

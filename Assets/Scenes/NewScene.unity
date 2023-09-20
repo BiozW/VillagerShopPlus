@@ -2677,11 +2677,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1598589241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acaee9d15a4a8e0409f866b15a605d89, type: 3}
+  m_Script: {fileID: 11500000, guid: 35b7f31b15e2cd0408b638b5dc4d58d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emeraldManager: {fileID: 1286358924}
-  emeraldcost: 0
+  cost: 0
 --- !u!1 &1660724355
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,17 +6,28 @@ using TMPro;
 
 namespace Minecraft.InventorySystem
 {
-        public class EmeraldManager : MonoBehaviour
+    public class EmeraldManager : MonoBehaviour, CurrencyManager
     {
         // Start is called before the first frame update
         public TMPro.TMP_Text emeraldText;
         public bool toggleInfinite = false;
-        public int myemerald = 64;
+        public int myemerald = 0;
+
+        public int GetCurrentCurrency()
+        {
+            return myemerald;
+        }
+
+        public void UpdateCurrency(int amount)
+        {
+            myemerald += amount;
+            InfiniteEmerald();
+            EmeraldUpdate();
+        }
 
         // Update is called once per frame
         void Update()
         {
-            InfiniteEmerald();
             EmeraldUpdate();
         }
 
