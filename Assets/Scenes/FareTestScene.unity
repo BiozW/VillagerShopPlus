@@ -1593,7 +1593,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: bda28b75f5b01e24495dfa0767ba37f0, type: 3}
   - name: Material
     icon: {fileID: 21300000, guid: 4b13538e9bc74eb4cbc9f04e2697433d, type: 3}
-  purchaseManager: {fileID: 0}
+  purchaseManager: {fileID: 1598589243}
 --- !u!1 &1131745491
 GameObject:
   m_ObjectHideFlags: 0
@@ -3002,8 +3002,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acaee9d15a4a8e0409f866b15a605d89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emeraldManager: {fileID: 1286358924}
-  emeraldcost: 0
+  EManager: {fileID: 1286358924}
+  cost: 0
 --- !u!1 &1660724355
 GameObject:
   m_ObjectHideFlags: 0

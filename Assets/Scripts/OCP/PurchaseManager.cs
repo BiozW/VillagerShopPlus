@@ -13,7 +13,6 @@ namespace Minecraft.InventorySystem
 
         public void Purchase()
         {
-            Debug.Log("Purchase");
             if (EManager.GetCurrentCurrency() >= cost)
             {
                 EManager.UpdateCurrency(-cost);
